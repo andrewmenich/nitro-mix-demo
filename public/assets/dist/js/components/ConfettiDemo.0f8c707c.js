@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[2],{lyKG:function(n,t,e){"use strict";e.r(t);var o=e("XuX8"),u=new(e.n(o).a)({el:"#confetti",components:{confetti:function(){return e.e(4).then(e.bind(null,"5+Fy"))}},data:{},methods:{},mounted:function(){}});t.default=u}}]);

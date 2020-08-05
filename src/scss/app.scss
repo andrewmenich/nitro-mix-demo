@@ -1,0 +1,40 @@
+@import 'global/all';
+
+body {
+  background:red;
+  color:aliceblue;
+  letter-spacing: -.1rem;
+  font-family: Helvetica, sans-serif;
+  font-weight: 800;
+  font-size: 48px;
+  display: grid;
+  
+  grid-template-columns: 12vw 1fr 12vw;
+}
+
+h1{
+  border: 6px dashed currentColor;
+  text-align:center;
+  letter-spacing: .3rem;
+  padding: 1rem 0;
+}
+
+#confetti {
+  grid-column: 2 / 3;
+}
+
+#widget {
+  background: white;
+  color: $blue;
+  margin:0;
+  grid-column: 2/3;
+  align-items:center;
+}
+
+.centered-text{
+  text-align:center;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: initial;
+}
+

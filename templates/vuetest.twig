@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+
+    {# <link rel="stylesheet" href="/assets/css/app.css"> #}
+    {{ craft.twigpack.includeCssModule("/css/app.css") }}
+    
+</head>
+<body>
+    <div id="widget">
+        <h1>Hello World</h1>
+        <p class="centered-text">Select a date below!</p>
+        <p class="centered-text" v-if="selectedDate">You selected {$ selectedDate $}</p>
+        
+        <v-date-picker :mode='mode' is-inline v-model='selectedDate' class="centered" />
+
+        
+    </div>
+
+    <div id="document-portal"></div>
+    {# // <script src="/js/app.js"></script> #}
+    {{ craft.twigpack.includeJsModule("/js/app.js") }}
+
+</body>
+</html>

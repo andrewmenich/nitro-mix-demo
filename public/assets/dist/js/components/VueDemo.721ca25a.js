@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{P356:function(e,n,t){"use strict";t.r(n);var a=t("XuX8"),o=t.n(a),s=t("WIcW"),d=t.n(s);o.a.use(d.a);var i=new o.a({el:"#widget",delimiters:["{$","$}"],components:{},data:{mode:"single",selectedDate:null},methods:{},mounted:function(){}});n.default=i}}]);
