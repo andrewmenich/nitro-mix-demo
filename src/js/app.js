@@ -1,8 +1,8 @@
 import './components/test';
 
-if(module.hot){
-  module.hot.accept();
-}
+// if(module.hot){
+//   module.hot.accept();
+// }
 
 const string = "change me!";
 console.log(string);

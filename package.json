@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "concurrently --raw -k  \"npm run watch\" \"npm run prod -s &> /dev/null\" ",
     "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "watch": "npm run development -- --watch",
+    "watch": "npm run development -- --watch --watch-poll",
     "hot": "webpack-dashboard -c blue -t 'Webpack Dashboard' -- cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --disable-host-check --progress --config=node_modules/laravel-mix/setup/webpack.config.js",
     "prod": "npm run production -- --watch",
     "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"

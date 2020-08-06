@@ -24,8 +24,8 @@ return [
         ],
         // webpack-dev-server config
         'devServer' => [
-            'manifestPath' => 'http://192.168.64.1:8080/',
-            'publicPath' => 'http://192.168.64.1:8080/',
+            'manifestPath' => '@webroot/build/',
+            'publicPath' => '/build/',
         ],
         // Bundle to use with the webpack-dev-server
         'devServerBuildType' => 'modern',

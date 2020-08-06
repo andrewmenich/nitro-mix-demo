@@ -8,20 +8,27 @@ if(!mix.inProduction()){
   mix.setPublicPath('public/build/')
      .js("./src/js/app.js", "js")
      .sass("./src/scss/app.scss", 'css')
-     .sourceMaps(true, 'source-map');
+     .sourceMaps(true, 'source-map')
+     .browserSync({
+       proxy: {
+         target: process.env.MIX_PUBLIC_URL,
+       },
+       ghostMode: false,
+       ignore: "/node_modules/",
+      })
   mix.webpackConfig({
       output: {
-        publicPath: "http://0.0.0.0:8080/",
+        publicPath: "/build/",
       },
-      devServer:{
-        host: '0.0.0.0',
-        port: 8080,
-        sockHost: '0.0.0.0',
-        sockPort: 8080,
-        headers: {
-          'Access-Control-Allow-Origin': '*'
-        }
-      },
+      // devServer:{
+      //   host: '0.0.0.0',
+      //   port: 8080,
+      //   sockHost: '0.0.0.0',
+      //   sockPort: 8080,
+      //   headers: {
+      //     'Access-Control-Allow-Origin': '*'
+      //   }
+      // },
       plugins: [
         new DashboardPlugin(),
       ],
